@@ -9,8 +9,8 @@ function analyse_image(image_name, qualities)
     
     for i=1:length(qualities)
         tic;
-        compressed_image = jpeg_compression(gray_image, qualities(i));
-        show_image_comparison(not_compressed_image, compressed_image, sprintf('Image: %s, Quality: %d', image_name, qualities(i)));
+        reconstructed_image = jpeg_compression(gray_image, qualities(i));
+        show_image_comparison(not_compressed_image, reconstructed_image, sprintf('Image: %s, Quality: %d', image_name, qualities(i)));
         toc;
     end
 end

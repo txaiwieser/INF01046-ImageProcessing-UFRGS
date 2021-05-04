@@ -12,7 +12,7 @@ close all;
 
 qualities = [50 10];
 
-analyse_image('kitesurf.jpg', qualities);
+analyse_image('kitesurf.jpg', qualities); 
 
 analyse_image('kites.jpg', qualities);
 
