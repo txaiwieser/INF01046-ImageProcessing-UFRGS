@@ -9,10 +9,12 @@ clc;
 clear all;
 close all;
 
-analyse_image('test.jpg', {[4, 256]});
+% Array of tuples (L, K)
+qualities = {[2*2, 256], [3*3, 256]};
 
-% analyse_image('kitesurf.jpg', {[4, 256]});
-% 
-% analyse_image('kites.jpg', {[4, 256]});
-% 
-% analyse_image('umbrela.jpg', {[4, 256]});
+analyse_image('umbrela.jpg', qualities);
+
+analyse_image('kites.jpg', qualities);
+
+analyse_image('kitesurf.jpg', qualities);
+
